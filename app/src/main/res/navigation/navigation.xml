@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/fragment_login_screen"
+    tools:ignore="UnusedNavigation">
+
+    <fragment
+        android:id="@+id/fragment_login_screen"
+        android:name="com.example.parwinder1.Dashboard"
+        android:label="fragment_fragment_login_screen"
+        tools:layout="@layout/fragment_fragment_login_screen" >
+        <action
+            android:id="@+id/action_fragment_login_screen_to_fragment_dashboard"
+            app:destination="@id/fragment_dashboard" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_registed"
+        android:name="com.example.parwinder1."
+        android:label="fragment_fragment_registed"
+        tools:layout="@layout/fragment_fragment_registed" >
+        <action
+            android:id="@+id/action_fragment_registed_to_fragment_login_screen"
+            app:destination="@id/fragment_login_screen" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_dashboard"
+        android:name="com.example.parwinder1."
+        android:label="fragment_fragment_dashboard"
+        tools:layout="@layout/fragment_fragment_dashboard" >
+        <action
+            android:id="@+id/action_fragment_dashboard_to_fragment_registed"
+            app:destination="@id/fragment_registed" />
+    </fragment>
+</navigation>
